@@ -21,22 +21,22 @@ Este repositório tem como objetivo:
 
 ```plaintext
 /
-├── databases/
+├── databases/ (breve)
 │   ├── postgres/
 │   ├── mysql/
 │   └── mongo/
 ├── dev-tools/
-│   ├── nginx/
-│   ├── redis/
-│   └── traefik/
-├── monitoring/
+│   ├── nginx/ (breve)
+│   ├── redis/ (breve)
+│   └── n8n/
+├── monitoring/ (breve)
 │   ├── prometheus-grafana/
 │   └── uptime-kuma/
-├── full-stacks/
+├── full-stacks/ (breve)
 │   ├── nextjs-postgres/
 │   └── laravel-mysql/
-├── README.md
-└── CONTRIBUTING.md
+├── 
+└── README.md
 ```
 
 ---
