@@ -46,20 +46,20 @@ Este repositório tem como objetivo:
 1. **Clone o repositório:**
 
 ```bash
-   git clone https://github.com/seu-usuario/composepedia.git
-   cd composepedia
+  git clone https://github.com/seu-usuario/composepedia.git
+  cd composepedia
 ```
 
 2. **Escolha o serviço ou stack desejado:**
 
 ```bash
-   cd databases/postgres
+  cd databases/postgres
 ```
 
 3. **Suba o serviço:**
 
 ```bash
-   docker-compose up -d
+  docker-compose up -d
 ```
 
 ---
@@ -88,3 +88,5 @@ Veja o arquivo [`CONTRIBUTING.md`](./CONTRIBUTING.md) com as instruções para p
 ## 📄 Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
