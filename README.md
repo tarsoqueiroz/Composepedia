@@ -21,13 +21,13 @@ Este repositório tem como objetivo:
 
 ```plaintext
 /
-├── databases/ (breve)
+├── databases/
 │   ├── postgres/
-│   ├── mysql/
-│   └── mongo/
+│   ├── mysql/ (breve)
+│   ├── mongo/ (breve)
+│   └── redis/ (breve)
 ├── dev-tools/
-│   ├── nginx/ (breve)
-│   ├── redis/ (breve)
+│   ├── abc/ (breve)
 │   └── n8n/
 ├── monitoring/ (breve)
 │   ├── prometheus-grafana/
@@ -35,6 +35,10 @@ Este repositório tem como objetivo:
 ├── full-stacks/ (breve)
 │   ├── nextjs-postgres/
 │   └── laravel-mysql/
+├── services/
+│   ├── keycloak/
+│   ├── nginx/ (breve)
+│   └── xyz/ (breve)
 ├── 
 └── README.md
 ```
