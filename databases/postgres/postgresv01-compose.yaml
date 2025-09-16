@@ -1,0 +1,39 @@
+# Versão base
+services:
+
+# Serviço: postgres
+  postgres:
+    image: postgres:17
+    container_name: postgres
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: changeit123!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - service_net
+    restart: unless-stopped
+
+# Serviço: pgadmin
+  pgadmin:
+    image: dpage/pgadmin4:9.8.0
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@pgadmin.edu
+      PGADMIN_DEFAULT_PASSWORD: changeit123!
+    ports:
+      - "8432:80"
+    networks:
+      - service_net
+    restart: unless-stopped
+
+# Volumes
+volumes:
+  postgres_data:
+
+# Redes
+networks:
+  service_net:
