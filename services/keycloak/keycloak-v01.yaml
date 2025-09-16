@@ -1,0 +1,20 @@
+# Versão base
+services:
+
+# Serviço: keycloak
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.3.4
+    container_name: keycloak
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: changeit123!
+    ports:
+      - "8080:8080"
+    networks:
+      - service_net
+    restart: unless-stopped
+    command: ["start-dev"] # "start" para produção
+
+# Redes
+networks:
+  service_net:
