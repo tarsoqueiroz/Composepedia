@@ -6,7 +6,7 @@
 
 The World's Most Advanced Open Source Relational Database.
 
-> [`https://www.postgresql.org/`](https://www.postgresql.org/)
+> [`www.postgresql.org`](https://www.postgresql.org/)
 >
 > [Docker Hub: postgres](https://hub.docker.com/_/postgres)
 
@@ -16,7 +16,7 @@ The World's Most Advanced Open Source Relational Database.
 
 **pgAdmin** is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
 
-> [`https://www.pgadmin.org/`](https://www.pgadmin.org/)
+> [`www.pgadmin.org`](https://www.pgadmin.org/)
 > 
 > [Docker Hub: dpage/admin4](https://hub.docker.com/r/dpage/pgadmin4)
 
@@ -68,21 +68,22 @@ docker stop pgadmin
 docker network rm service_net
 ```
 
-## Versão Docker Compose (01)
+## Versão Docker Compose (postgres + pgAdmin)
 
-- [`postgresv01-compose.yaml`](./postgresv01-compose.yaml)
+- [`postgres-v01.yaml`](./postgres-v01.yaml)
 
 ```sh
-# criar rede
-docker network create service_net
-
 # docker compose
-docker compose -f postgresv01-compose.yaml up -d
+docker compose -f postgres-v01.yaml up -d
 
 # verificando
-docker compose -f postgresv01-compose.yaml ls
-docker compose -f postgresv01-compose.yaml ps
+docker compose -f postgres-v01.yaml ls
+docker compose -f postgres-v01.yaml ps
 
 # limpar
-docker compose -f postgresv01-compose.yaml down -v
+docker compose -f postgres-v01.yaml down -v
 ```
+
+## Por enquanto
+
+...é isso pessoal!!!
