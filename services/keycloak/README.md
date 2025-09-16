@@ -48,7 +48,7 @@ docker compose -f keycloak-v01.yaml down -v
 
 ### Usando um PostgreSQL
 
-- [`keycloak-v02.yaml`](./keycloakv-02.yaml)
+- [`keycloak-v02.yaml`](./keycloak-v02.yaml)
 
 ```sh
 # docker compose
